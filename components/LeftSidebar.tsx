@@ -51,23 +51,25 @@ const LeftSidebar = () => {
             </Link>
           );
         })}
-        <Link
-          className={cn(
-            "flex gap-3 items-center py-4 max-lg:px-4 justify-center lg:justify-start",
-            {
-              "bg-nav-focus border-r-4 border-orange-1": isMyProfileTabActive,
-            }
-          )}
-          href={`/profile/${user?.id}`}
-        >
-          <Image
-            src={"/icons/profile.svg"}
-            alt="route-icon"
-            width={20}
-            height={20}
-          />
-          <p className="text-white-1">My Profile</p>
-        </Link>
+        {user && (
+          <Link
+            className={cn(
+              "flex gap-3 items-center py-4 max-lg:px-4 justify-center lg:justify-start",
+              {
+                "bg-nav-focus border-r-4 border-orange-1": isMyProfileTabActive,
+              }
+            )}
+            href={`/profile/${user?.id}`}
+          >
+            <Image
+              src={"/icons/profile.svg"}
+              alt="route-icon"
+              width={20}
+              height={20}
+            />
+            <p className="text-white-1">My Profile</p>
+          </Link>
+        )}
       </nav>
       <SignedOut>
         <div className="flex-center w-full pb-14 max-lg:px-4 lg:pr-8">
