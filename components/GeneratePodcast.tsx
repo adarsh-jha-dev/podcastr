@@ -118,6 +118,10 @@ const GeneratePodcast = (props: GeneratePodcastProps) => {
           onChange={(e) => props.setVoicePrompt(e.target.value)}
         />
       </div>
+      <p className="text-12 mt-2 truncate text-white-2">
+        Since, I am not using a paid TTS (Text-to-Speech) conversion, please
+        keep the prompt/transcript short
+      </p>
       <div className="mt-5 w-full max-w-[200px]">
         <Button
           type="submit"
