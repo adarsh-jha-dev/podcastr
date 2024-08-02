@@ -175,8 +175,8 @@ const CreatePodcast = () => {
               </Select>
               {voiceType === "Zoë" && (
                 <p className="text-12 text-white-1">
-                  Unfortunately, Zoë's preview is not available. But we assure
-                  you, she sounds amazing!
+                  Unfortunately, Zoë&apos;s preview is not available. But we
+                  assure you, she sounds amazing!
                 </p>
               )}
             </div>

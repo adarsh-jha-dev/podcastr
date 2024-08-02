@@ -25,7 +25,7 @@ const Discover = ({
       <div className="flex flex-col gap-9">
         <h1 className="text-20 font-bold text-white-1">
           {!search ? "Discover Trending podcasts" : "Search results for: "}
-          {search && <span className="text-white-2">"{search}"</span>}
+          {search && <span className="text-white-2">&quot;{search}&quot;</span>}
         </h1>
         {podcastsData ? (
           <>
